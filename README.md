@@ -1,5 +1,5 @@
 # INTRODUCTION
-***This is the official pytorch implementation of \<Causal Incremental Graph Convolution forRecommender System Retraining\> published in IEEE TRANSACTIONS ON Neural Networks and Learning Systems. If you use the code please cite our paper***
+***This is a pytorch implementation of \<Causal Incremental Graph Convolution forRecommender System Retraining\> published in IEEE TRANSACTIONS ON Neural Networks and Learning Systems. If you use the code please cite our paper***
 
 ***
 @ARTICLE{9737000,  
