@@ -1,4 +1,4 @@
-# INTRODUCTION
+# INTRODUCTION  
 ***This is a pytorch implementation of \<Causal Incremental Graph Convolution forRecommender System Retraining\> published in IEEE TRANSACTIONS ON Neural Networks and Learning Systems. If you use the code please cite our paper***
 
 ***
