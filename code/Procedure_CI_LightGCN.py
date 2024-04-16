@@ -112,7 +112,7 @@ def test_joint(model, dataset, old_embeddings, epoch, ww=None):
                 rating = Meta_model.get_finalprediction(old_embeddings, batch_users_gpu)
                 Rating_cpu=rating.cpu()
                 test_Dict_onebatch={}
-                for i in range(b ):
+                for i in range(batch_users_tensor.size()[0]):
                     test_Dict_onebatch[int(batch_users_tensor[i])]=testDict[int(batch_users_tensor[i])]
                 INlist.append((batch_users_tensor.numpy(),Rating_cpu.numpy(),test_Dict_onebatch))
                 
@@ -345,7 +345,7 @@ def test_joint_icl_Mount(model, dataset, old_embeddings, old_User, epoch, w=None
 #                 rating = Meta_model.get_finalprediction(old_embeddings, batch_users_gpu)
 #                 Rating_cpu=rating.cpu()
 #                 test_Dict_onebatch={}
-#                 for i in range(b ):
+#                 for i in range(batch_users_tensor.size()[0]):
 #                     test_Dict_onebatch[int(batch_users_tensor[i])]=testDict[int(batch_users_tensor[i])]
 #                 INlist.append((batch_users_tensor.numpy(),Rating_cpu.numpy(),test_Dict_onebatch))
                 
